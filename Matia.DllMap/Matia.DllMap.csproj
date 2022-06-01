@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Matia.DllMap</RootNamespace>
+    <DefineTrace>true</DefineTrace>
+    <DocumentationFile>Matia.DllMap.Docs.xml</DocumentationFile>
+    <GeneratedAssemblyInfoFile>AssemblyInfo.cs</GeneratedAssemblyInfoFile>
+    <GenerateDocumentation>true</GenerateDocumentation>
+    <AssemblyTitle>Matia.DllMap</AssemblyTitle>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <Description>A simple implementation to map DLLs with XML files.</Description>
+    <Copyright>2022 © Victor Matia &lt;vmatir@gmail.com&gt;</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Matia.DllMap</PackageId>
+    <Title>Matia's DLL Map</Title>
+    <Version>1.0.0</Version>
+    <Authors>Victor Matia</Authors>
+    <Description>A simple implementation to map DLLs with XML files.</Description>
+    <Copyright>2022 © Victor Matia &lt;vmatir@gmail.com&gt;</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+    <DefineDebug>true</DefineDebug>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="docs\" />
+    <None Include="..\LICENSE.md" Pack="true" PackagePath="docs\" />
+  </ItemGroup>
+
+</Project>
