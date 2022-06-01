@@ -1,0 +1,8 @@
+obj
+bin
+publish
+out
+.idea
+.vs
+AssemblyInfo.cs
+DllMap.Docs.xml
