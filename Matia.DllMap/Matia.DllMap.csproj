@@ -13,6 +13,7 @@
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <Description>A simple implementation to map DLLs with XML files.</Description>
     <Copyright>2022 © Victor Matia &lt;vmatir@gmail.com&gt;</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup>
