@@ -11,7 +11,9 @@ An Example Program
 
 For a program with the assembly name "MyGlfwWrapper":
 
-```dotnetcli
+```csharp
+using System.Runtime.InteropServices;
+
 namespace MyGlfwWrapper;
 
 public static class Glfw
@@ -33,7 +35,10 @@ This program will not work on any system that uses or ships a library that is GL
 different name. For example, the latest on Linux will be called libglfw3.so but on Windows it will
 be GLFW3.dll. With this library, if we instead create the program as:
 
-```dotnetcli
+```csharp
+using System.Runtime.InteropServices;
+using Matia.DllMap;
+
 namespace MyGlfwWrapper;
 
 public static class Glfw
@@ -67,7 +72,7 @@ But the `Linux.MyGlfwWrapper.DllConfig.xml` would look like:
 
 ```xml
 <configuration>
-    <dllmap dll="glfw" target="libglfw3.so.0">
+    <dllmap dll="glfw" target="libglfw3.so.0" />
 </configuration>
 ```
 
