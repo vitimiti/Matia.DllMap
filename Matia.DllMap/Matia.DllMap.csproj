@@ -14,6 +14,12 @@
     <Description>A simple implementation to map DLLs with XML files.</Description>
     <Copyright>2022 © Victor Matia &lt;vmatir@gmail.com&gt;</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/vitimiti/Matia.DllMap</PackageProjectUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/vitimiti/Matia.DllMap</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>DllMap</PackageTags>
+    <PackageVersion>1.0.1</PackageVersion>
   </PropertyGroup>
 
   <PropertyGroup>

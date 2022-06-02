@@ -13,9 +13,9 @@ public static class DllMapper
     ///     The registration expects an XML document of the name AssemblyName.DllConfig.xml
     ///     with the DLL that was expected and the DLL to target. For example:
     ///     <code>
-    /// <![CDATA[<]]> configuration <![CDATA[>]]>
-    ///     <![CDATA[<]]> dllmap dll="GLFW" target="glfw3" / <![CDATA[>]]>
-    ///<![CDATA[<]]> /configuration <![CDATA[>]]>
+    /// <![CDATA[<]]>configuration<![CDATA[>]]>
+    ///     <![CDATA[<]]>dllmap dll="GLFW" target="glfw3" /<![CDATA[>]]>
+    ///<![CDATA[<]]>/configuration<![CDATA[>]]>
     ///     </code>
     ///     Will map the order <c>[DllImport("GLFW")]</c> to <c>[DllImport("glfw3")]</c>. This
     ///     can be useful for libraries with different names on different systems. You'd want to
